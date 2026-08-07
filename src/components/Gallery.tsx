@@ -64,7 +64,7 @@ export default function Gallery() {
             >
               <img
                 src={item.img}
-                alt={`Gallery ${item.cat}`}
+                alt={`Kuaför Nuri Çiçek Atakent - ${item.cat === 'hair' ? 'Saç Tasarımı' : item.cat === 'color' ? 'Saç Boyası ve Ombre' : item.cat === 'makeup' ? 'Profesyonel Makyaj' : item.cat === 'bridal' ? 'Gelin Başı' : item.cat === 'nails' ? 'Manikür Pedikür' : 'Güzellik Uygulaması'}`}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-zinc-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

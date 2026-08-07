@@ -63,7 +63,7 @@ export default function Appointment() {
       <div className="absolute inset-0 z-0">
         <img 
           src={bgAppointment}
-          alt="Spa/Salon Background" 
+          alt="Kuaför Nuri Çiçek Atakent Randevu" 
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-white/80"></div>

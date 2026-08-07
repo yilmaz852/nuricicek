@@ -53,8 +53,8 @@ export default function About() {
               <div className="w-12 h-0.5 bg-[#D4AF37] mt-3"></div>
             </div>
             
-            <h2 className="serif-font text-5xl md:text-6xl lg:text-7xl text-zinc-900 mb-10 leading-[1.1] font-bold">
-              Sanatın ve Estetiğin <br/> Buluşma Noktası
+            <h2 className="serif-font text-4xl md:text-5xl lg:text-6xl text-zinc-900 mb-10 leading-[1.1] font-bold">
+              Atakent Kadın Kuaförü <br/> Sanatın ve Estetiğin Noktası
             </h2>
             
             <p className="text-zinc-600 mb-8 leading-relaxed font-sans text-lg md:text-xl font-light">
@@ -86,7 +86,7 @@ export default function About() {
               <img 
                 ref={imageRef}
                 src={interiorImage}
-                alt="Salonumuz İç Görünüm" 
+                alt="Kuaför Nuri Çiçek Atakent Güzellik Merkezi İç Görünüm" 
                 className="w-full h-full object-cover origin-center"
               />
             </div>

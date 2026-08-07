@@ -60,7 +60,7 @@ export default function Hero() {
         <img
           ref={imageRef}
           src={heroImage}
-          alt="Kadın Kuaförü Salon Dış Görünüm"
+          alt="Kuaför Nuri Çiçek - Küçükçekmece Atakent Kadın Kuaförü ve Güzellik Salonu"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-zinc-900/60 z-10"></div>
