@@ -27,23 +27,6 @@ export const galleryData = [
   { id: 8, cat: 'color', img: galleryColor }
 ];
 
-export const campaignsData = [
-  {
-    id: 1,
-    badge: "%20 İNDİRİM",
-    title: "GELİN PAKETİ",
-    desc: "Erken rezervasyonlarda Gelin Paketi'nde %20 indirim fırsatı.",
-    endDate: "2026-12-31"
-  },
-  {
-    id: 2,
-    badge: "FIRSAT",
-    title: "HAFTA İÇİ BAKIM",
-    desc: "Salı ve Çarşamba günleri saç bakımı yaptıranlara manikür hediye!",
-    endDate: "2026-11-15"
-  }
-];
-
 export const testimonialsData = [
   {
     id: 1,

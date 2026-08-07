@@ -10,9 +10,9 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <h3 className="luxury-font text-3xl text-white mb-6">NURİ ÇİÇEK</h3>
+            <h3 className="luxury-font text-3xl text-white mb-6">KUAFÖR NURİ ÇİÇEK</h3>
             <p className="text-sm leading-relaxed mb-6 font-light">
-              Sanatın saçla buluştuğu nokta. Uzman kadromuzla kendinizi özel hissetmeniz için tasarlandı.
+              Atakent ve Küçükçekmece'nin önde gelen kadın kuaförü ve güzellik merkezi. Profesyonel saç kesimi, ombre, makyaj ve gelin saçı hizmetleriyle sanatın saçla buluştuğu nokta.
             </p>
           </div>
           

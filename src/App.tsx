@@ -13,7 +13,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
-import Campaigns from './components/Campaigns';
 import Testimonials from './components/Testimonials';
 import Appointment from './components/Appointment';
 import Contact from './components/Contact';
@@ -53,7 +52,6 @@ export default function App() {
       <About />
       <Services />
       <Gallery />
-      <Campaigns />
       <Testimonials />
       <Appointment />
       <Contact />

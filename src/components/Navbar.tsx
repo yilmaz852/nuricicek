@@ -95,7 +95,7 @@ export default function Navbar() {
               <a
                 href="#booking"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="bg-rose-500 text-white text-center py-3 uppercase tracking-widest mt-4 hover:bg-rose-600 transition-colors"
+                className="bg-zinc-900 text-white text-center py-3 uppercase tracking-widest mt-4 hover:bg-zinc-800 transition-colors border border-zinc-900"
               >
                 Randevu Al
               </a>

@@ -8,8 +8,7 @@ export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
   
-  const isOpen = (currentDay >= 1 && currentDay <= 6 && currentHour >= 9 && currentHour < 20) || 
-                 (currentDay === 0 && currentHour >= 11 && currentHour < 18);
+  const isOpen = (currentDay !== 1 && currentHour >= 9 && currentHour < 20);
 
   useEffect(() => {
     gsap.fromTo(infoRef.current,
@@ -45,12 +44,12 @@ export default function Contact() {
               </div>
               <ul className="space-y-4 text-lg text-zinc-600 font-light">
                 <li className="flex justify-between border-b border-zinc-100 pb-4">
-                  <span>Pazartesi - Cumartesi</span>
+                  <span>Salı - Pazar</span>
                   <span className="font-medium text-zinc-900">09:00 - 20:00</span>
                 </li>
                 <li className="flex justify-between pt-2">
-                  <span>Pazar</span>
-                  <span className="font-medium text-[#D4AF37]">11:00 - 18:00</span>
+                  <span>Pazartesi</span>
+                  <span className="font-medium text-red-600">Kapalı</span>
                 </li>
               </ul>
             </div>

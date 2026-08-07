@@ -58,11 +58,11 @@ export default function About() {
             </h2>
             
             <p className="text-zinc-600 mb-8 leading-relaxed font-sans text-lg md:text-xl font-light">
-              Kuaför Nuri Çiçek, 30 yılı aşkın süredir güzellikte mükemmeliyeti hedefleyen bir vizyonla hizmet vermektedir. Salonumuz, modern teknikleri profesyonel dokunuşlarla birleştirerek kendinizi en iyi hissedeceğiniz deneyimi sunar.
+              İstanbul Küçükçekmece Atakent mahallesinde yer alan Kuaför Nuri Çiçek, 30 yılı aşkın süredir güzellikte mükemmeliyeti hedefleyen bir vizyonla hizmet vermektedir. Modern teknikleri profesyonel dokunuşlarla birleştirerek, bölgenin en çok tercih edilen kadın kuaförü ve güzellik salonu olarak sizlere benzersiz bir deneyim sunuyoruz.
             </p>
             
             <p className="text-zinc-600 mb-12 leading-relaxed font-sans text-lg font-light">
-              Amacımız sadece saç yapmak değil, aynı zamanda ruhunuza dokunan, kendinizi şımarttığınız ve stresten arındığınız sıcak, konforlu ve minimalist bir ortam yaratmaktır.
+              Amacımız sadece saç yapmak değil, aynı zamanda ruhunuza dokunan, kendinizi şımarttığınız ve stresten arındığınız sıcak, konforlu ve minimalist bir ortam yaratmaktır. Saç kesimi, ombre, balyaj ve profesyonel makyaj gibi birçok alanda uzman ekibimizle yanınızdayız.
             </p>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-zinc-200">

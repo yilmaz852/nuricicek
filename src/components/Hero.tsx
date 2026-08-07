@@ -67,13 +67,13 @@ export default function Hero() {
       </div>
 
       <div ref={textRef} className="relative z-30 text-center px-6 max-w-5xl mx-auto mt-20 flex flex-col items-center">
-        <h1 className="luxury-font text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-widest drop-shadow-lg" style={{ clipPath: 'inset(0 0 0 0)' }}>
-          NURİ ÇİÇEK
+        <h1 className="luxury-font text-4xl md:text-6xl lg:text-7xl text-white mb-6 tracking-widest drop-shadow-lg" style={{ clipPath: 'inset(0 0 0 0)' }}>
+          KUAFÖR NURİ ÇİÇEK
         </h1>
         
-        <p className="text-zinc-200 text-lg md:text-xl tracking-[0.3em] uppercase mb-12 font-light serif-font" style={{ clipPath: 'inset(0 0 0 0)' }}>
-          Sanatın Saçla Buluştuğu Nokta
-        </p>
+        <h2 className="text-zinc-200 text-sm md:text-base tracking-[0.2em] uppercase mb-12 font-light serif-font" style={{ clipPath: 'inset(0 0 0 0)' }}>
+          Atakent'in Öncü Kadın Kuaförü & Güzellik Merkezi
+        </h2>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full" style={{ clipPath: 'inset(0 0 0 0)' }}>
           <a 

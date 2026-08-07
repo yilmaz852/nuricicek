@@ -71,9 +71,12 @@ export default function Services() {
   return (
     <section id="services" className="py-32 bg-zinc-100">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div ref={headerRef} className="text-center mb-20">
+        <div ref={headerRef} className="text-center mb-20 max-w-3xl mx-auto">
           <span className="text-zinc-900 uppercase tracking-[0.3em] text-xs font-bold">Hizmetlerimiz</span>
-          <h2 className="serif-font text-5xl md:text-6xl mt-4 text-zinc-900 font-bold">Lüks & Konfor</h2>
+          <h2 className="serif-font text-4xl md:text-5xl lg:text-6xl mt-4 text-zinc-900 font-bold mb-6">Atakent'te Lüks & Konfor</h2>
+          <p className="text-zinc-600 font-light text-lg">
+            Küçükçekmece Atakent mahallesindeki modern salonumuzda kadınlara özel saç kesimi, ombre, profesyonel makyaj ve gelin başı gibi geniş bir yelpazede hizmet sunuyoruz.
+          </p>
           <div className="w-16 h-0.5 bg-[#D4AF37] mx-auto mt-6"></div>
         </div>
 
