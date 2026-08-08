@@ -6,14 +6,14 @@ import galleryMakeup from './assets/images/gallery_makeup_1784790353516.jpg';
 import galleryBridal from './assets/images/gallery_bridal_1784790368497.jpg';
 
 export const servicesData = [
-  { id: 'haircut', title: "Saç Kesimi", icon: "Scissors", desc: "Yüz hatlarınıza uygun, modern ve trend kesimler." },
-  { id: 'color', title: "Saç Boyama & Ombre", icon: "Paintbrush", desc: "Kişiselleştirilmiş renk tasarımı, balyaj ve röfle." },
-  { id: 'styling', title: "Fön & Şekillendirme", icon: "Wind", desc: "Günlük veya özel günler için kalıcı şekillendirme." },
-  { id: 'care', title: "Keratin & Bakım", icon: "Sparkles", desc: "Yıpranmış saçlar için onarıcı keratin botox bakımı." },
-  { id: 'makeup', title: "Profesyonel Makyaj", icon: "Brush", desc: "Porselen makyaj, gece makyajı ve günlük makyaj." },
-  { id: 'bridal', title: "Gelin Paketi", icon: "Heart", desc: "En özel gününüzde saç, makyaj ve VIP hazırlık." },
-  { id: 'nails', title: "Manikür & Pedikür", icon: "Hand", desc: "Kalıcı oje, nail art ve SPA el-ayak bakımı." },
-  { id: 'brows', title: "Kaş & Kirpik", icon: "Eye", desc: "Microblading, ipek kirpik ve kaş laminasyonu." }
+  { id: 'haircut', title: "Saç Kesimi", icon: "Scissors", desc: "Yüz hatlarınıza uygun, modern ve trend saç kesim modelleri." },
+  { id: 'color', title: "Ombre & Sombre", icon: "Paintbrush", desc: "Kişiselleştirilmiş renk tasarımı, balyaj, ombre ve sombre işlemleri." },
+  { id: 'styling', title: "Fön & Topuz", icon: "Wind", desc: "Brezilya fönü, kırık fön, kalıcı şekillendirme ve özel gün topuz modelleri." },
+  { id: 'care', title: "Keratin & Bakım", icon: "Sparkles", desc: "Yıpranmış saçlar için onarıcı keratin botox ve saç bakımı." },
+  { id: 'makeup', title: "Profesyonel Makyaj", icon: "Brush", desc: "Porselen makyaj, gece makyajı ve günlük profesyonel makyaj uygulamaları." },
+  { id: 'bridal', title: "Gelin Başı & Paketi", icon: "Heart", desc: "En özel gününüzde kusursuz gelin başı, makyaj ve VIP gelin hazırlığı." },
+  { id: 'nails', title: "Manikür & Pedikür", icon: "Hand", desc: "Kalıcı oje, nail art ve SPA el-ayak bakımı hizmetleri." },
+  { id: 'brows', title: "Kaş & Kirpik", icon: "Eye", desc: "Microblading, ipek kirpik ve kaş laminasyonu ile belirgin bakışlar." }
 ];
 
 export const galleryData = [
