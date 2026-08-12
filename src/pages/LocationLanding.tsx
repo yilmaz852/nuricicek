@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import Appointment from '../components/Appointment';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Faq from '../components/Faq';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,6 +70,7 @@ export default function LocationLanding({ location }: LocationLandingProps) {
       <Services />
       <Gallery />
       <Testimonials />
+      <Faq />
       <Appointment />
       <Contact />
       <Footer />
