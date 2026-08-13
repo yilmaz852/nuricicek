@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { MapPin } from 'lucide-react';
+import { MapPin, Scissors, Sparkles, Star } from 'lucide-react';
 
 interface SeoContentBlockProps {
   location: string;
@@ -31,38 +31,54 @@ export default function SeoContentBlock({ location, keyword }: SeoContentBlockPr
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-zinc-100 border-b border-zinc-200 relative overflow-hidden">
+    <section id="seo-content" ref={sectionRef} className="py-24 bg-zinc-50 border-b border-zinc-200 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-5xl">
-        <div ref={containerRef} className="bg-white p-10 md:p-14 shadow-xl border border-zinc-200 rounded-sm">
+        <div ref={containerRef} className="bg-white p-10 md:p-16 shadow-2xl border border-zinc-100 rounded-sm">
           <div className="flex items-center justify-center gap-3 mb-6 text-[#D4AF37]">
-            <MapPin size={28} />
-            <span className="text-zinc-900 uppercase tracking-[0.2em] text-sm font-bold">Yerel Rehber</span>
+            <Star size={28} />
+            <span className="text-zinc-900 uppercase tracking-[0.2em] text-sm font-bold">Profesyonel Güzellik Merkezi</span>
           </div>
           
-          <h1 className="serif-font text-3xl md:text-4xl text-center text-zinc-900 mb-8 font-bold leading-tight">
-            En İyi {location} {keyword} Arayışınız İçin <br /> Doğru Adres: Kuaför Nuri Çiçek
-          </h1>
+          <h2 className="serif-font text-3xl md:text-5xl text-center text-zinc-900 mb-10 font-bold leading-tight">
+            {location} Bölgesinin En İyi <br /> {keyword} Deneyimi
+          </h2>
           
-          <div className="space-y-6 text-zinc-600 font-light leading-relaxed text-lg">
+          <div className="space-y-8 text-zinc-600 font-light leading-relaxed text-lg text-justify">
             <p>
-              İstanbul {location} bölgesinde profesyonel, güvenilir ve trendleri yakından takip eden bir <strong>{keyword.toLowerCase()}</strong> arıyorsanız, Kuaför Nuri Çiçek olarak 30 yılı aşkın tecrübemizle yanınızdayız. Güzellik vizyonumuz, sadece bir işlem yapmak değil; yüz hatlarınıza, yaşam tarzınıza ve ten renginize en uygun tasarımı ortaya çıkarmaktır.
+              Güzellik ve bakım rutininizi sıradanlıktan çıkarıp bir sanat eserine dönüştürmek için <strong>İstanbul {location}</strong> bölgesinde hizmetinizdeyiz. Profesyonel, güvenilir ve dünya trendlerini yakından takip eden bir <strong>{keyword.toLowerCase()}</strong> arayışındaysanız, Kuaför Nuri Çiçek olarak 30 yılı aşkın tecrübemizle en doğru adres biziz. Bizim için kuaförlük, sadece saç kesmek veya boyamak değil; yüz hatlarınıza, yaşam tarzınıza ve ten renginize en uygun, tamamen size özel bir imaj tasarımı ortaya çıkarmaktır.
             </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+              <div className="p-8 bg-zinc-50 border border-zinc-100 rounded-sm hover:shadow-lg transition-shadow duration-300">
+                <Scissors className="text-[#D4AF37] w-10 h-10 mb-4" />
+                <h3 className="serif-font text-2xl text-zinc-900 font-bold mb-3">Modern Saç Tasarımı</h3>
+                <p className="text-base">
+                  Özellikle <strong>ombre, sombre, bebek kumralı, röfle ve buz sarısı balyaj</strong> gibi yüksek teknik ve uzmanlık gerektiren renklendirme işlemlerinde {location} bölgesinin tartışmasız referans noktasıyız. Saçlarınızı yıpratmadan, en sağlıklı formda hayalinizdeki tona ulaştırıyoruz.
+                </p>
+              </div>
+              <div className="p-8 bg-zinc-50 border border-zinc-100 rounded-sm hover:shadow-lg transition-shadow duration-300">
+                <Sparkles className="text-[#D4AF37] w-10 h-10 mb-4" />
+                <h3 className="serif-font text-2xl text-zinc-900 font-bold mb-3">VIP Gelin & Makyaj</h3>
+                <p className="text-base">
+                  Düğün, nişan ve özel davetleriniz için hazırladığımız <strong>VIP Gelin Başı ve Porselen Makyaj</strong> paketlerimizle en özel gününüzde kusursuz görünmenizi sağlıyoruz. Dünyaca ünlü Kryolan, Mac ve Dior gibi birinci sınıf makyaj ürünleriyle kalıcı güzellik sunuyoruz.
+                </p>
+              </div>
+            </div>
             
+            <h3 className="serif-font text-3xl text-zinc-900 font-bold mb-4 mt-8">Neden Bizi Seçmelisiniz?</h3>
             <p>
-              Özellikle <strong className="text-zinc-800">saç kesimi, ombre, sombre, bebek kumralı, buz sarısı balyaj</strong> gibi uzmanlık gerektiren renklendirme işlemlerinde bölgenin referans noktasıyız. Kullanılan malzemelerin birinci sınıf dünya markalarından seçilmesi, saçlarınızın yıpranmadan en sağlıklı şekilde istenen tona ulaşmasını sağlar. Ayrıca keratin botox ve brezilya fönü gibi bakımlarla saçlarınıza eski canlılığını kazandırıyoruz.
+              Birinci sınıf dünya markalarından seçilen ürünlerimiz (Wella, L'Oréal Professionnel, Schwarzkopf, Kerastase), saçlarınızın işlemler sırasında görebileceği hasarı sıfıra indirir. Ayrıca <strong>keratin botox, brezilya fönü, saç detoksu ve dökülme karşıtı bakımlarımızla</strong> saçlarınıza eski canlılığını ve ipeksi dokusunu geri kazandırıyoruz. Salonumuzda hijyen kuralları en üst düzeyde uygulanmakta olup, her müşterimize kişiye özel sterilize edilmiş ekipmanlarla hizmet verilmektedir.
             </p>
-            
-            <p>
-              Düğün, nişan ve özel davetleriniz için hazırladığımız <strong>VIP Gelin Başı ve Porselen Makyaj</strong> paketlerimizle en özel gününüzde kusursuz görünmenizi sağlıyoruz. <strong className="text-zinc-800">Atakent 1. Posta Sokak</strong> üzerindeki kolay ulaşılabilir merkezi konumumuz sayesinde hem {location} içinden hem de çevre semtlerden gelen misafirlerimiz için konforlu bir deneyim sunuyoruz.
-            </p>
-            
-            <div className="mt-8 p-6 bg-zinc-50 border border-zinc-100 rounded-sm text-center">
-              <h3 className="serif-font text-xl text-zinc-900 font-semibold mb-3">Kolay Ulaşım ve Google Haritalar Konumu</h3>
-              <p className="text-base text-zinc-500 mb-4">
-                Google Haritalar (Maps) üzerinden yol tarifi alarak salonumuza kolayca ulaşabilir, rahat otopark imkanımızdan faydalanabilirsiniz. Randevulu sistemle çalıştığımız için beklemeden hizmet alırsınız.
+
+            <div className="mt-12 p-8 bg-zinc-900 text-white rounded-sm text-center relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-[#D4AF37]"></div>
+              <MapPin className="text-[#D4AF37] w-12 h-12 mx-auto mb-4" />
+              <h3 className="serif-font text-2xl font-bold mb-3">Sizleri Salonumuza Bekliyoruz</h3>
+              <p className="text-zinc-400 mb-6 max-w-2xl mx-auto">
+                {location} merkezde, ulaşımı son derece kolay olan salonumuza Google Haritalar (Maps) üzerinden tek tıkla yol tarifi alabilirsiniz. Geniş otopark alanımız ve rahat bekleme salonumuzla hizmetinizdeyiz. Size özel zaman ayırabilmemiz için randevu almayı unutmayın.
               </p>
-              <a href="#booking" className="inline-block px-8 py-3 bg-[#D4AF37] text-white text-sm uppercase tracking-widest font-semibold hover:bg-zinc-900 transition-colors duration-300">
-                Hemen Randevu Alın
+              <a href="#booking" className="inline-block px-10 py-4 bg-[#D4AF37] text-zinc-900 text-sm uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300">
+                Randevu ve Fiyat Bilgisi
               </a>
             </div>
           </div>

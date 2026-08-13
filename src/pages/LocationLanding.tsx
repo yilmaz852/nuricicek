@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
+import LocationHero from '../components/LocationHero';
 import About from '../components/About';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
@@ -67,9 +67,8 @@ export default function LocationLanding({ location, keyword }: LocationLandingPr
   return (
     <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden">
       <Navbar />
-      <Hero />
+      <LocationHero location={location} keyword={keyword} />
       <SeoContentBlock location={location} keyword={keyword} />
-      <About />
       <Services />
       <Gallery />
       <Testimonials />
