@@ -12,8 +12,10 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/atakent-kuafor" element={<LocationLanding location="Atakent" />} />
-        <Route path="/kucukcekmece-kuafor" element={<LocationLanding location="Küçükçekmece" />} />
+        <Route path="/atakent-kuafor" element={<LocationLanding location="Atakent" keyword="Kuaför" />} />
+        <Route path="/atakent-bayan-kuaforu" element={<LocationLanding location="Atakent" keyword="Bayan Kuaförü" />} />
+        <Route path="/atakent-kadin-kuaforu" element={<LocationLanding location="Atakent" keyword="Kadın Kuaförü" />} />
+        <Route path="/kucukcekmece-kuafor" element={<LocationLanding location="Küçükçekmece" keyword="Kuaför" />} />
       </Routes>
     </BrowserRouter>
   );

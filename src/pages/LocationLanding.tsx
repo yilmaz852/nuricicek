@@ -13,18 +13,20 @@ import Appointment from '../components/Appointment';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Faq from '../components/Faq';
+import SeoContentBlock from '../components/SeoContentBlock';
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface LocationLandingProps {
   location: string;
+  keyword: string;
 }
 
-export default function LocationLanding({ location }: LocationLandingProps) {
+export default function LocationLanding({ location, keyword }: LocationLandingProps) {
   useEffect(() => {
-    const title = `Kuaför Nuri Çiçek | ${location} Kadın Kuaförü & Güzellik Merkezi`;
-    const description = `İstanbul ${location} bölgesinde profesyonel kadın kuaförü, saç kesimi, ombre, balyaj, makyaj, gelin başı ve güzellik salonu hizmetleri. Kuaför Nuri Çiçek ile farkı hissedin.`;
-    const keywords = `${location} kuaför, ${location} kadın kuaförü, ${location} bayan kuaförü, ${location} güzellik merkezi, saç kesimi, ombre, sombre, balyaj, gelin başı, makyaj, brezilya fönü, Kuaför Nuri Çiçek`;
+    const title = `Kuaför Nuri Çiçek | ${location} ${keyword} & Güzellik Merkezi`;
+    const description = `İstanbul ${location} bölgesinde profesyonel ${keyword.toLowerCase()}, saç kesimi, ombre, balyaj, makyaj, gelin başı ve güzellik salonu hizmetleri. Kuaför Nuri Çiçek ile farkı hissedin.`;
+    const keywords = `${location} ${keyword.toLowerCase()}, ${location} kuaför, ${location} kadın kuaförü, ${location} bayan kuaförü, ${location} güzellik merkezi, saç kesimi, ombre, sombre, balyaj, gelin başı, makyaj, brezilya fönü, Kuaför Nuri Çiçek`;
 
     document.title = title;
     document.querySelector('meta[name="title"]')?.setAttribute('content', title);
@@ -66,6 +68,7 @@ export default function LocationLanding({ location }: LocationLandingProps) {
     <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden">
       <Navbar />
       <Hero />
+      <SeoContentBlock location={location} keyword={keyword} />
       <About />
       <Services />
       <Gallery />

@@ -44,9 +44,11 @@ export default function Footer() {
               <li><a href="#" className="hover:text-white transition-colors">Kullanım Koşulları</a></li>
               <li><a href="#" className="hover:text-white transition-colors">KVKK Aydınlatma Metni</a></li>
             </ul>
-            <h4 className="text-[#D4AF37] uppercase tracking-[0.2em] text-xs font-bold mb-6 mt-8">Hizmet Bölgeleri</h4>
+            <h4 className="text-[#D4AF37] uppercase tracking-[0.2em] text-xs font-bold mb-6 mt-8">Bölge & Lokasyon</h4>
             <ul className="space-y-4 text-sm font-light">
               <li><a href="/atakent-kuafor" className="hover:text-white transition-colors">Atakent Kuaför</a></li>
+              <li><a href="/atakent-kadin-kuaforu" className="hover:text-white transition-colors">Atakent Kadın Kuaförü</a></li>
+              <li><a href="/atakent-bayan-kuaforu" className="hover:text-white transition-colors">Atakent Bayan Kuaförü</a></li>
               <li><a href="/kucukcekmece-kuafor" className="hover:text-white transition-colors">Küçükçekmece Kuaför</a></li>
             </ul>
           </div>
