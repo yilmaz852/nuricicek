@@ -38,7 +38,57 @@ export default function LocationLanding({ location, keyword }: LocationLandingPr
     
     document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', title);
     document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', description);
-  }, [location]);
+
+    // Dynamic Canonical URL
+    const slug = `${location.toLowerCase().replace(/ç/g, 'c').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ı/g, 'i')}-${keyword.toLowerCase().replace(/ç/g, 'c').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ı/g, 'i').replace(/\s+/g, '-')}`;
+    const canonicalUrl = `https://www.nuricicek.com/${slug}`;
+    
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', canonicalUrl);
+
+    // Schema.org Structured Data
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": `Kuaför Nuri Çiçek - ${location} ${keyword}`,
+      "image": "https://www.nuricicek.com/assets/images/hero_salon_1784790292526.jpg",
+      "url": canonicalUrl,
+      "telephone": "+905321234567", // Update to real number if known
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Atakent 1. Posta Sokak",
+        "addressLocality": location,
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.0422,
+        "longitude": 28.7770
+      },
+      "priceRange": "$$",
+      "description": description
+    };
+
+    let scriptTag = document.querySelector('#seo-schema');
+    if (!scriptTag) {
+      scriptTag = document.createElement('script');
+      scriptTag.id = 'seo-schema';
+      scriptTag.setAttribute('type', 'application/ld+json');
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify(schemaData);
+
+    return () => {
+      // Clean up dynamic schema if needed (or just let it overwrite next time)
+      if (scriptTag) scriptTag.remove();
+    };
+  }, [location, keyword]);
 
   useEffect(() => {
     const lenis = new Lenis({
