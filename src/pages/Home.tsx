@@ -18,6 +18,7 @@ import Appointment from './../components/Appointment';
 import Contact from './../components/Contact';
 import Footer from './../components/Footer';
 import Faq from './../components/Faq';
+import FloatingContact from './../components/FloatingContact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,7 +48,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden">
+    <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden pb-[54px] md:pb-0">
       <Navbar />
       <Hero />
       <About />
@@ -58,6 +59,7 @@ export default function Home() {
       <Appointment />
       <Contact />
       <Footer />
+      <FloatingContact />
     </div>
   );
 }

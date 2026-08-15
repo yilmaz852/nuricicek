@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-zinc-900 mb-2 uppercase tracking-widest text-sm">Google Haritalar</h4>
-                  <a href="https://maps.app.goo.gl/WRZ5mSzUCUQFcW5D9?g_st=ac" target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-[#D4AF37] transition-colors text-lg leading-relaxed font-light break-all">Profilimizi İnceleyin</a>
+                  <a href="https://maps.app.goo.gl/7fqdaAwVq8RShaLK8?g_st=ac" target="_blank" rel="noreferrer" className="text-zinc-500 hover:text-[#D4AF37] transition-colors text-lg leading-relaxed font-light break-all">Profilimizi İnceleyin</a>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Contact() {
             <div className="pt-8">
               <h4 className="font-bold text-zinc-900 mb-6 uppercase tracking-widest text-sm">Bizi Takip Edin</h4>
               <div className="flex gap-6">
-                <a href="#" className="w-12 h-12 border border-zinc-300 flex items-center justify-center text-zinc-900 hover:bg-[#D4AF37] hover:text-white hover:border-[#D4AF37] transition-all">
+                <a href="https://www.instagram.com/nuricicekofficial?igsh=MW92aTJkOGxoM3ltbw==" target="_blank" rel="noreferrer" className="w-12 h-12 border border-zinc-300 flex items-center justify-center text-zinc-900 hover:bg-[#D4AF37] hover:text-white hover:border-[#D4AF37] transition-all">
                   <Instagram size={20} />
                 </a>
                 <a href="#" className="w-12 h-12 border border-zinc-300 flex items-center justify-center text-zinc-900 hover:bg-[#D4AF37] hover:text-white hover:border-[#D4AF37] transition-all">

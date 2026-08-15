@@ -14,6 +14,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Faq from '../components/Faq';
 import SeoContentBlock from '../components/SeoContentBlock';
+import FloatingContact from '../components/FloatingContact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,7 +116,7 @@ export default function LocationLanding({ location, keyword }: LocationLandingPr
   }, []);
 
   return (
-    <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden">
+    <div className="font-sans text-zinc-800 bg-zinc-50 relative overflow-x-hidden pb-[54px] md:pb-0">
       <Navbar />
       <LocationHero location={location} keyword={keyword} />
       <SeoContentBlock location={location} keyword={keyword} />
@@ -126,6 +127,7 @@ export default function LocationLanding({ location, keyword }: LocationLandingPr
       <Appointment />
       <Contact />
       <Footer />
+      <FloatingContact />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { ChevronUp } from 'lucide-react';
+import { ChevronUp, Instagram, Facebook, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -14,6 +14,17 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-6 font-light">
               Atakent ve Küçükçekmece'nin önde gelen kadın kuaförü ve güzellik merkezi. Profesyonel saç kesimi, ombre, makyaj ve gelin saçı hizmetleriyle sanatın saçla buluştuğu nokta.
             </p>
+            <div className="flex gap-4 mt-6">
+              <a href="https://www.instagram.com/nuricicekofficial?igsh=MW92aTJkOGxoM3ltbw==" target="_blank" rel="noreferrer" className="w-10 h-10 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-[#D4AF37] hover:text-zinc-900 hover:border-[#D4AF37] transition-all rounded-sm">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-[#D4AF37] hover:text-zinc-900 hover:border-[#D4AF37] transition-all rounded-sm">
+                <Facebook size={18} />
+              </a>
+              <a href="https://maps.app.goo.gl/7fqdaAwVq8RShaLK8?g_st=ac" target="_blank" rel="noreferrer" className="w-10 h-10 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-[#D4AF37] hover:text-zinc-900 hover:border-[#D4AF37] transition-all rounded-sm">
+                <MapPin size={18} />
+              </a>
+            </div>
           </div>
           
           <div>

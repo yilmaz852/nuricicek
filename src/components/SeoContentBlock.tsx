@@ -149,7 +149,7 @@ export default function SeoContentBlock({ location, keyword }: SeoContentBlockPr
               <MapPin className="text-[#D4AF37] w-12 h-12 mx-auto mb-4" />
               <h3 className="serif-font text-2xl font-bold mb-3">Sizleri Salonumuza Bekliyoruz</h3>
               <p className="text-zinc-400 mb-6 max-w-2xl mx-auto">
-                {location} merkezde, ulaşımı son derece kolay olan salonumuza Google Haritalar (Maps) üzerinden tek tıkla yol tarifi alabilirsiniz. Geniş otopark alanımız ve rahat bekleme salonumuzla hizmetinizdeyiz. Size özel zaman ayırabilmemiz için randevu almayı unutmayın.
+                {location} merkezde, ulaşımı son derece kolay olan salonumuza <a href="https://maps.app.goo.gl/7fqdaAwVq8RShaLK8?g_st=ac" target="_blank" rel="noreferrer" className="text-[#D4AF37] hover:underline">Google Haritalar (Maps)</a> üzerinden tek tıkla yol tarifi alabilirsiniz. Geniş otopark alanımız ve rahat bekleme salonumuzla hizmetinizdeyiz. Size özel zaman ayırabilmemiz için randevu almayı unutmayın.
               </p>
               <a href="#booking" className="inline-block px-10 py-4 bg-[#D4AF37] text-zinc-900 text-sm uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300">
                 Randevu ve Fiyat Bilgisi
