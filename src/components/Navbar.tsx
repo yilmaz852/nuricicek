@@ -15,11 +15,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Anasayfa', href: '#hero' },
-    { name: 'Hakkımızda', href: '#about' },
-    { name: 'Hizmetler', href: '#services' },
-    { name: 'Galeri', href: '#gallery' },
-    { name: 'İletişim', href: '#contact' },
+    { name: 'Anasayfa', href: '/' },
+    { name: 'Hakkımızda', href: '/#about' },
+    { name: 'Hizmetler', href: '/#services' },
+    { name: 'Galeri', href: '/#gallery' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'İletişim', href: '/#contact' },
   ];
 
   return (
@@ -29,7 +30,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
-        <a href="#hero" className={`luxury-font text-2xl font-bold ${isScrolled ? 'text-zinc-900' : 'text-white'}`}>
+        <a href="/#" className={`luxury-font text-2xl font-bold ${isScrolled ? 'text-zinc-900' : 'text-white'}`}>
           Nuri Çiçek
         </a>
 
@@ -47,7 +48,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#booking"
+            href="/#booking"
             className={`px-6 py-2.5 text-sm uppercase tracking-widest transition-all border ${
               isScrolled
                 ? 'bg-zinc-900 text-white border-zinc-900 hover:bg-white hover:text-zinc-900 hover:border-zinc-900'
@@ -93,7 +94,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#booking"
+                href="/#booking"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="bg-zinc-900 text-white text-center py-3 uppercase tracking-widest mt-4 hover:bg-zinc-800 transition-colors border border-zinc-900"
               >

@@ -50,7 +50,7 @@ export default function FloatingContact() {
 
         {/* Appointment Button */}
         <a 
-          href="#booking" 
+          href="/#booking" 
           className="flex-1 flex items-center justify-center text-zinc-500 hover:text-zinc-900 transition-colors border-l border-zinc-100 group"
         >
           <CalendarDays size={22} className="group-hover:scale-110 transition-transform" strokeWidth={1.5} />
